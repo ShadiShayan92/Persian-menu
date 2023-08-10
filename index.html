@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change this to your name-->
+    <meta name="Shadi Shayan" content="Shadi Shayan" />
+
+    <title>WEB222 Store</title>
+    <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
+    <link rel="stylesheet" href="./css/sakura.css" type="text/css" />
+  </head>
+  <body>
+    <header id="head">
+      <!-- Change this to your Store's info -->
+      <h1
+        style="
+          text-align: center;
+          font-style: italic;
+          text-shadow: 5px 5px 5px rgb(100, 183, 250);
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        * Shadi Persian Food *
+      </h1>
+      <!-- <div style="padding-left: 240px">
+        <img style="border-radius: 20px" src="./images/shadi.webp" alt="shadi" />
+      </div> -->
+
+      <p
+        style="
+          text-align: center;
+          font-weight: 300px;
+          font-style: italic;
+          font-size: x-large;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 15px;
+        "
+      >
+        We introduce traditional Iranian dishes to you on this website. We can also deliver these
+        delicious foods to you with the best quality and the shortest time.
+      </p>
+    </header>
+    <hr />
+
+    <img
+      style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 20px;
+        width: 500px;
+        height: 450px;
+      "
+      ;
+      src="./images/menu2.jpg"
+      alt="menu image"
+    />
+
+    <hr />
+    <hr />
+
+    <!-- <button id="appe">Appetizer</button>
+    <button id="mainco">Main Course</button>
+    <button id="dese">Desert</button> -->
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+
+      <!-- Buttons: appetizer, main course, and desert -->
+      <button id="appetizer">Appetizer</button>
+      <button id="main_course">Main Course</button>
+      <button id="desert">Desert</button>
+    </nav>
+
+    <hr />
+    <hr />
+
+    <!-- 
+<div id="cardDiv">
+
+</div> -->
+
+    <main>
+      <h2 id="selected-category">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <div
+        style="
+          align-content: center;
+          text-align: left;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: left;
+          justify-content: space-between;
+          border-block: 20px;
+          border-radius: 20px;
+        "
+        id="card_div"
+      ></div>
+    </main>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/categories.js"></script>
+    <script src="./js/products.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
